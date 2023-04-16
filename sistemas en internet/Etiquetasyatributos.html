@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Etiquetas y atributos</title>
+    </head>
+    <body>
+        <h1>Etiquetas y atributos</h1>
+        <hr>
+        <p>
+            <b>Indicación:</b> Elige 2 etiquetas por categoría basado en los apuntes (todas excepto las de son de color rojo) e investiga los atributos que 
+            pueden ser utilizados en dichas etiquetas.
+        </p>
+        <p>Etiquetas elegidas:</p>
+        <ul>
+            <li><b>Etiquetas multimedia:</b> &lt;img&gt; y &lt;video&gt;.</li>
+            <li><b>Etiquetas para estructurar contenido:</b> &lt;ul&gt; y &lt;ol&gt;.</li>
+            <li><b>Etiqueta para enlace:</b> &lt;a&gt;.</li>
+            <li><b>Etiquetas para tablas:</b> &lt;table&gt; y &lt;col&gt;.</li>
+            <li><b>Etiquetas para formularios:</b> &lt;button&gt; y &lt;select&gt;.</li>
+        </ul>
+
+        <hr>
+
+
+        <!-- Etiquetas multimedia -->
+
+
+        <h2>Etiquetas multimedia.</h2>
+        <hr>
+        <h3>Etiqueta &lt;img&gt</h3>
+        <p>La etiqueta &lt;img&gt representa una imagen en nuestro documento HTML.</p>
+        <h4>Atributos:</h4>
+        <ul>
+            <li><b>alt: </b>Representa un texto alternativo que describe la imagen en caso de que la misma no pueda ser mostrada.</li>
+            <li><b>height:</b>Define la altura de la imagen, se pueden poner el número específico de pixeles o en porcentaje.</li>
+            <li><b>src: </b>Nombre de la imagen o su URL, básicamente sirve para insertar la imagen.</li>
+            <li><b>width: </b>Define la anchura de la imagen, se puede poner el número específico de pixeles o en porcentaje.</li>
+            <li><b>title: </b>Mostrará el contenido de este argumento cuando el usuario coloque el click sobre la imagen.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Escudo_ac_milan_%281990s%29.png" alt="Escudo Milan" width="35%" height="35%" title="Escudo Milan">
+        <h3>Etiqueta &lt;video&gt</h3>
+        <p>La etiqueta &lt;video&gt representa un video en el documento HTML.</p>
+        <h4>Atributos:</h4>
+        <ul>
+            <li><b>src: </b>Nombre del archivo de video.</li>
+            <li><b>controls: </b>Indica si se deben mostrar los controles del reproductor.</li>
+            <li><b>height: </b>Define la altura del video en pixeles o porcentajes.</li>
+            <li><b>loop: </b>Indica si el video debe reproducirse una y otra vez.</li>
+            <li><b>poster: </b>Especifica una imagen para mostrar en caso de que no se pueda reproducir el video.</li>
+            <li><b>title: </b>Especifica una breve descripción del video que los navegadores y tecnologias de asistencia pueden mostrar.</li>
+            <li><b>width: </b>Define la anchura del video en pixeles o porcentajes.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <video 
+        src="https://www.youtube.com/watch?v=6jffFCiMngc" type="video/mp4" autoplay controls height="40%" loop 
+        poster="https://i.ytimg.com/vi/6jffFCiMngc/maxresdefault.jpg" title="La cotorrisa" width="40%">
+        </video>
+
+<!-- Etiquetas para estructurar contenido -->
+
+
+        <hr>
+        <h2>Etiquetas para estructurar contenido.</h2>
+        <hr>
+        <h3>Etiqueta &lt;ul&gt;</h3>
+        <p>
+            La etiqueta &lt;ul&gt; sirve para crear una lista desordenada (Unorder List).
+        </p>
+        <h4>Atributos:</h4>
+        <ul>
+            <li><b>disc: </b>Representa la viñeta como un disco (un círculo relleno).</li>
+            <li><b>square: </b>Representa la viñeta como un cuadrado.</li>
+            <li><b>circle: </b>Representa la viñeta como un circulo (sin relleno a diferencia de disc)</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <ul style="list-style-type:square">
+            <li>Milan</li>
+            <li>Napoli</li>
+            <li>Lazio</li>
+        </ul>
+        <h3>Etiqueta &lt;ol&gt;</h3>
+        <p>
+            La etiqueta &lt;ol&gt; sirve para crear una lista ordenada (Order List). Usando el atributo type, podemos
+            definir el símbolo que se mostrará en nuestra lista ordenada. A continuación se muestran las opciones para el
+            atributo type: 
+        </p>
+        <ul>
+            <li><b>1: </b>Números (viene por defecto) 1,2,3...</li>
+            <li><b>A: </b>Letras mayúsculas A,B,C...</li>
+            <li><b>a: </b>Letras minúsculas a,b,c</li>
+            <li><b>l: </b>Números romanos en mayúsculas I,II,III...</li>
+            <li><b>i: </b>Números romanos en minúsculas i,ii,iii...</li>
+        </ul>
+        <p>
+            Aunado a los atributos para el diseño del símbolo, existen otros 2 atributos que se pueden usar para otras finalidades:
+        </p>
+        <ul>
+            <li><b>start: </b>Sirve para indicar a la lista un número de inicio con el cual empezará a contar la lista.</li>
+            <li><b>reversed: </b>Para que los elementos se muestren de manera descendente.</li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <ol type="1" start="2" reversed>
+            <li>Barcelona</li>
+            <li>Real madrid</li>
+            <li>Valencia</li>
+        </ol>
+        <ol type="A" start="1">
+            <li>Chelsea</li>
+            <li>Arsenal</li>
+            <li>Manchester utd</li>
+        </ol>
+        <ol type="I">
+            <li>Bayern munich</li>
+            <li>Borussia dortmund</li>
+            <li>SC Freiburg</li>
+        </ol>
+
+        <!-- Etiqueta para enlace -->
+        
+        <hr>
+        <h2>Etiqueta para enlace &lt;a&gt;</h2>
+        <hr>
+
+        <p>
+            Esta etiqueta recibe el nombre de <b>anchor</b> y sirve para que al hacer click, el usuario pueda
+            navegar a otra página web del especificada, ya sea una en general dentro de internet, o una del propio proyecto.
+        </p>
+        <h4>Atributos:</h4>
+        <ul>
+            <li><b>href: </b>Contiene una URL o un fragmento de URL al cual apunta el enlace.</li>
+            <li>
+                <b>target: </b>Especifica en donde desplegar la URL enlazada. Sus opciones son self, para que en la misma
+                pestaña se cambie al enlace, o blank, para que el enlace se abra en una pestaña nueva.
+            </li>
+        </ul>
+        <h4>Ejemplo:</h4>
+        <ul>
+            <li><a href="https://www.acmilan.com/en">Pagina web del AC Milan.</a></li>
+            <li><a href="https://www.uaq.mx/">Página de la UAQ.</a></li>
+        </ul>
+
+        <!-- Etiqueta para tablas -->
+
+
+        <hr>
+        <h2>Etiqueta para tablas</h2>
+        <hr>
+        <h3>Etiqueta &lt;table&gt;</h3>
+
+        <p>Sirve para representar una tabla.</p>
+        <ul>
+            <li><b>tr: </b>Crea una fila en una tabla.</li>
+            <li><b>th: </b>Crea el nombre de una columna de la tabla.</li>
+            <li><b>td: </b>Crea una casilla de información en la tabla.</li>
+        </ul>
+
+        <h3>Etiqueta &lt;col&gt;</h3>
+        <p>Sirve para especificar informacion visual.</p>
+        <ul>
+            <li><b>span: </b>Sirve para decir cuántas columnas queremos afectar con dichos cambios.</li>
+            <li><b>style: </b>Sirve para especificar la parte visual de la tabla.</li>
+        </ul>
+
+        <h4>Ejemplo:</h4>
+
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: rgb(130, 143, 138);">
+                <col style="background-color: rgb(89, 147, 176);">
+            </colgroup>
+            <tr>
+                <th>Liga inglesa</th>
+                <th>Liga italiana</th>
+                <th>Liga española</th>
+            </tr>
+            <tr>
+                <td>Arsenal</td>
+                <td>Milan</td>
+                <td>Valencia</td>
+            </tr>
+            <tr>
+                <td>Chelsea</td>
+                <td>Napoli</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>Manchester utd</td>
+                <td>Lazio</td>
+                <td>Real madrid</td>
+            </tr>
+        </table>
+
+
+<!-- Etiqueta para formularios -->
+
+
+        <hr>
+        <h2>Etiqueta para formularios</h2>
+        <hr>
+        <h3>Etiqueta &lt;button&gt;</h3>
+
+        <p>Sirve para crear un boton. Algunos de sus argumentos son:</p>
+        <ul>
+            <li><b>name: </b>Asigna un nombre de control.</li>
+            <li>
+                <b>type: </b>Indica el tipo de boton.
+            </li>
+            <li><b>disabled: </b>Indica que el control está desabilitado.</li>
+        </ul>
+
+        <h4>Ejemplo:</h4>
+        <button name="boton-1" type="reset" >Reiniciar</button>
+        <button name="boton-2" type="submit">Aceptar</button>
+
+        <h3>Etiqueta &lt;select&gt;</h3>
+        <p>El elemento select de HTML representa un control que muestra un menú de opciones.</p>
+        <h4>Atributos:</h4>
+        <ul>
+            <li><b>multiple: </b>Este elemento booleano indica que se pueden seleccionar múltiples opciones de la lista.</li>
+            <li><b>name: </b>El nombre del elemento de control.</li>
+            <li><b>size: </b>Si el control se presenta como una lista con scroll en caja, este atributo representa el numero de filas que la list tendrá.</li>
+        </ul>
+
+        <h4>Ejemplo:</h4>
+
+        <select name="Selecciona un equipo">
+            <option value="Equipo1">Milan</option>
+            <option value="Equipo2" >Barcelona</option>
+            <option value="Equipo3">Manchester utd</option>
+          </select>
+    </body>
+</html>
